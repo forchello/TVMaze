@@ -31,8 +31,8 @@ const Series = ({navigation, route}) => {
   const [showButtonMore, setShowButtonMore] = useState(1);
 
   const dateLabelArray = route.params.label.split(' ');
-  const dateLabel =
-    dateLabelArray[2] + ' ' + dateLabelArray[3] + ' ' + dateLabelArray[4];
+
+  const dateLabel = `${dateLabelArray[2]} ${dateLabelArray[3]} ${dateLabelArray[4]}`;
 
   const previewCount = 3;
   const maximumCount = -1;
@@ -46,14 +46,16 @@ const Series = ({navigation, route}) => {
       const responce_data = await response.json();
       setDataLength(responce_data.length);
 
+      let count;
+
       if (limit === maximumCount) {
-        limit = responce_data.length;
+        count = responce_data.length;
       } else if (responce_data.length <= previewCount) {
-        limit = previewCount;
+        count = previewCount;
         setShowButtonMore(0);
       }
 
-      setData(responce_data.slice(0, limit));
+      setData(responce_data.slice(0, count));
     } catch (error) {
       console.error(error);
     } finally {
