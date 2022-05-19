@@ -1,6 +1,6 @@
 # TVMaze
 ## Created by Nikita Alekseenko
-##### [Download Android Build]()
+##### [Download Android Build](https://github.com/forchello/TVMaze/blob/main/android/app/release/app-release.apk)
 
 Completing the task of the [following requirement](https://docs.google.com/document/d/1IAZhFU1AEouCUQVaITSdVCoWPNXTTdCwMZ95CGUe4sU)
 
