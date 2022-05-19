@@ -46,16 +46,14 @@ const Series = ({navigation, route}) => {
       const responce_data = await response.json();
       setDataLength(responce_data.length);
 
-      let count;
-
       if (limit === maximumCount) {
-        count = responce_data.length;
+        limit = responce_data.length;
       } else if (responce_data.length <= previewCount) {
-        count = previewCount;
+        limit = previewCount;
         setShowButtonMore(0);
       }
 
-      setData(responce_data.slice(0, count));
+      setData(responce_data.slice(0, limit));
     } catch (error) {
       console.error(error);
     } finally {
