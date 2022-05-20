@@ -26,4 +26,4 @@ Which software is required for a successful installation:
 | ------ | ------ |
 | JDK [11+] | https://www.oracle.com/java/technologies/javase/jdk18-archive-downloads.html |
 | NodeJs [14+] | https://nodejs.org/en/download/ |
-| More abouе setup | https://reactnative.dev/docs/environment-setup |
+| More about setup | https://reactnative.dev/docs/environment-setup |
